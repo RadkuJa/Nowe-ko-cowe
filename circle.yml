@@ -1,0 +1,8 @@
+# circleci + testcafe
+machine:
+  node:
+    version: 7.6.0
+
+test:
+  override:
+    - node_modules/testcafe/bin/testcafe.js chrome tests/example.js
